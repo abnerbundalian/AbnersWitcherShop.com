@@ -1,0 +1,143 @@
+body {
+	background-image: url("witcher.jfif");
+	background-size: 100%;
+	height: 100%;
+}
+
+.firstnav ul{
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}
+
+.firstnav li:not(:first-child):before{
+    content: " ∙ ";
+}
+
+.firstnav ul li{
+	border: none;
+	margin-left: 10px;
+	font-size: 2.0em;
+	margin-bottom: 2px;
+}
+
+.firstnav ul li a{
+	color: #C0C0C0;
+	text-decoration:none;
+}
+
+.firstnav ul li:hover, nav ul li a:focus{
+	text-shadow: 2px 2px 1px #CCCCFF;
+}
+
+#content{
+	width: 90%;
+	height: 350px;
+	margin: 10px auto;
+	padding:  50px;
+	border: 3px #B0C4DE solid;
+	border-radius: 50px;
+	background: linear-gradient(90deg, rgba(69,87,91,1) 16%, rgba(12,72,75,1) 50%, rgba(2,0,36,1) 88%);
+}
+
+#content h1{
+	color: #C0C0C0;
+	text-shadow: 1px 1px 2px #FFF;
+	display: flex;
+	justify-content: center;
+}
+
+#content p{
+	position: relative;
+	color: #C0C0C0;
+	display: flex;
+	justify-content: center;
+	font-size: 1.1em;
+}
+
+#content p img{
+	position: absolute; 
+	top: -100px;
+	right: 5px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+#content h2{
+	display: flex;
+	justify-content: center;
+	color: #C0C0C0;
+}
+
+form{
+	width: 500px;
+	background-color: #020024;
+	margin: 0px auto;
+}
+
+form legend, li{
+	color: white;
+}
+
+.section1 ol li{
+	background: #0c484b;
+	border: 2px solid #E3EBC3;
+	border-radius: 5px;
+	line-height: 30px;
+	padding: 5px 10px;
+	margin-bottom: 2px;
+	list-style: none;
+}
+
+.section1 label{
+	float: left;
+	width: 100px;
+}
+
+fieldset h1{
+	color: #C0C0C0;
+	text-shadow: 1px 1px 2px #FFF;
+	display: flex;
+	justify-content: center;
+}
+
+footer{
+	clear: both;
+	width: 100%;
+	height: 400px;
+	text-align: center;
+	position: fixed;
+	bottom: -300px;
+}
+
+footer nav li:not(:first-child):before {
+    content: " ∙ ";
+    margin-left: 10px;
+    font-size: 0.8em;
+
+}
+
+footer nav ul{
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	text-align: center;
+}
+
+footer nav ul li a{
+	text-decoration: none;
+	font-size: 1em;
+	color: #C0C0C0;
+}
+
+footer a:hover, nav ul li a:focus{
+	text-shadow: 2px 2px 1px #6666FF;
+}
+
+form .error{
+	visibility: hidden;
+	color: red;
+	font-weight: bold;
+	font-size: .8em;
+} 
